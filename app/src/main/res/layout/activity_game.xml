@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/casino_background1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:id="@+id/announcement"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/black"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/announcement1"
+            android:layout_width="630dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="-10dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:text="Game Starting..." />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/save"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/computer"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/table_comp"
+        app:layout_constraintTop_toBottomOf="@+id/announcement">
+        <Button
+            android:id="@+id/c0"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_back"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/c1"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_back"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/c2"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_back"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/c3"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_back"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/pileComputer"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/action"
+            android:text="Pile"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+
+    <LinearLayout
+        android:id="@+id/casinoTable"
+        android:layout_width="1032dp"
+        android:layout_height="620dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/casino_table"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/computer">
+
+        <LinearLayout
+            android:layout_width="580dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="60dp">
+
+            <Button
+                android:id="@+id/actionTrail"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/action"
+                android:text="@string/trail"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/actionCapture"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/action"
+                android:text="@string/capture"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/actionBuild"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/action"
+                android:text="@string/build"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/casinoTableButtonsR1"
+            android:layout_width="670dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/t0"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/t1"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/t2"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/t3"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/t4"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/t5"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/casinoTableButtonsR2"
+            android:layout_width="670dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/t6"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/t7"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/t8"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/t9"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/t10"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/t11"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp" />
+
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="650dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/actionReset"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/action"
+                android:text="Reset"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/turnMove"
+                android:layout_width="250dp"
+                android:layout_height="98dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/action"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/actionHelp"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/action"
+                android:text="@string/help"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+    </LinearLayout>>
+
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/human"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/table_human"
+        app:layout_constraintTop_toBottomOf="@+id/casinoTable">
+
+        <Button
+            android:id="@+id/h0"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="80dp"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/h1"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/h2"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/h3"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/pileHuman"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/action"
+            android:text="Pile"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </TableRow>
+
+</android.support.constraint.ConstraintLayout>

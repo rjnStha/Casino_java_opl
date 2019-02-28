@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/casino_background"
+    tools:context=".WelcomeActivity">
+
+    <LinearLayout
+        android:id="@+id/buttonBoard"
+        android:layout_width="0dp"
+        android:layout_height="822dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/casinoImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/textViewKonane"
+            android:background="@drawable/title"
+            android:layout_width="430dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-smallcaps"
+            app:layout_constraintBottom_toTopOf="@+id/newGame"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/newGame"
+            android:layout_width="400dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/action"
+            android:text="@string/new_game"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toTopOf="@+id/loadGame"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/loadGame"
+            android:layout_width="400dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/action"
+            android:text="@string/load_game"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tutorial" />
+
+        <Button
+            android:id="@+id/tutorial"
+            android:layout_width="400dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/action"
+            android:text="@string/tutorial"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loadGame" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/casinoImage"
+        android:layout_width="0dp"
+        android:layout_height="408dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonBoard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/displayWelcome"
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="290dp"
+            android:background="@drawable/white"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

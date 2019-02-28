@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Casino</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="casino">Casino</string>
+    <string name="new_game">New Game</string>
+    <string name="load_game">Load Game</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="load">Load</string>
+    <string name="trail">Trail</string>
+    <string name="capture">Capture</string>
+    <string name="build">Build</string>
+    <string name="help">Help</string>
+    <string name="prompt">Please Enter the File name</string>
+    <string name="ok">Ok</string>
+    <string name="delete">Delete</string>
+    <string name="file_name">File Name: </string>
+    <string name="last_date_modified">Last Date Modified</string>
+</resources>

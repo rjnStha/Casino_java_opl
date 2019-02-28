@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/constraintInput1"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/black"
+        android:text="Please Enter the File name"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:background="@drawable/black"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/userInputFile"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="90dp"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/okSave"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="70dp"
+            android:background="@drawable/action"
+            android:text="Save"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="54sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
